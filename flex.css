@@ -1,0 +1,50 @@
+.flex-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+  
+#content-container {
+    height: 180px;
+    background: #988d7c;
+    line-height: 180px;
+    text-align: center;
+    color: white;
+    font-size:80px;
+    width: 100%;
+    margin: 10px 0;
+    box-shadow: 0 5px 9px 0 #0000008c;
+    border-radius: 8px;
+}
+  
+#column {
+    padding: 0 10px;
+    box-sizing: border-box;
+    flex: 25%;
+    max-width: 25%;
+}
+#column2 {
+    padding: 0 10px;
+    box-sizing: border-box;
+    flex: 25%;
+    max-width: 25%;
+}
+  
+@media (max-width: 800px) {
+    #column {
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+  
+@media (max-width: 400px) {
+    #column {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+  
+#content-container:hover {
+    background: #8e9298;
+}
